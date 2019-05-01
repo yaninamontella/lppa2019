@@ -1,3 +1,27 @@
 body {
-  background-color: blue;
+  
+
+}
+.container{
+  background-color: lightgreen;
+  display: flex;
+  width: 500px;
+  height: 500px;
+  flex-direction: column;
+  /*flex-wrap:wrap;
+  flex-direction:row;*/
+
+}
+.item{
+  width: 80px;
+  background: grey;
+  /*border:1px solid black;
+  flex-grow: 1;
+  flex-shrink: 1;*/
+}
+
+.item:nth-child(5){
+  /*flex-grow: 6;*/
+  /*flex-shrink: 2;*/
+  align-self: center;
 }
