@@ -1,0 +1,126 @@
+body{
+  margin: 50px;/*le agregeue margen porque si no la parte superior no se veia*/
+  background: #3577A7;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-top: 15px;
+}
+.header-title{
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+.header-image{
+  width: 50px;
+  height: 50px;
+  padding-right: 10px;
+}
+.content-description{
+  padding: 20px;
+  text-align: center;
+}
+
+.game{
+  display:flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.board{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: #F8F8F8;
+  padding: 20px;
+}
+
+.middle, .first, .last{
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  background: grey;
+/*  margin: 2px;*/
+}
+
+.first-part-list, .middle-part-list, .last-part-list{
+  display:flex;
+  flex-direction: column;
+  justify:center;
+ list-style: none;/*para sacar las viñetas de la lista"*/
+}
+
+.ball-place{
+  background-color: #015EBB;
+  border: 2px solid #013D78;
+  /*align-items: center;*/
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin: 5px;
+  box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.65);
+
+}
+
+.ball-place-empty{
+  background-color: #DEDEDE;
+  border: 2px solid #FFF;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin: 5px;
+
+}
+
+@media (min-width:768px) {
+  html{
+    height: 100%;
+  }
+  body{
+    height: 60%;
+  }
+  .content{
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .header{
+    width: 40%;
+    margin-left: 10px;
+  }
+  .game{
+    width: 60%;
+  }
+  .ball-place, .ball-empty{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+
+  }
+}
+@media (min-width:500px) {
+  .ball-place, .ball-place-empty{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+  }
+
+}
+@media (min-width:1200px) {
+  .ball-place, .ball-place-empty{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+}
