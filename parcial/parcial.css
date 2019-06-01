@@ -35,4 +35,9 @@ footer{
 }
  .logo .titulo{
      position: relative;
+     font-size: 100vh, 100vw;
+     font:inherit;
+     text-transform: uppercase;
+     font-weight: bold;
+     text-decoration: none;
  }
