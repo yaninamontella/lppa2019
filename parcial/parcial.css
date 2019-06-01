@@ -10,6 +10,29 @@ footer{
   background-color: rgb(226, 223, 222);
 }
 .contenedor{
+  margin-top: 2vh;
   background-color: rgb(108, 174, 173);
-  height: 78vh;
+  height: 76vh;
+  display: flex;
+  flex-direction: row;
 }
+
+.lateralder{
+  width: 5vw;
+}
+.lateralizq{
+  width: 95vw;
+}
+.logo{
+  height: 20vh;
+  display: flex;
+  justify-content: flex-start;
+}
+.imagenlogo{
+  position: relative;
+  width: 2vw;
+  height: 5vh;
+}
+ .logo .titulo{
+     position: relative;
+ }
