@@ -1,0 +1,15 @@
+header{
+  height: 2vh;
+  background-color: rgb(219, 248, 248);
+}
+
+footer{
+  height: 20vh;
+  display: flex;
+  align-items: flex-end;
+  background-color: rgb(226, 223, 222);
+}
+.contenedor{
+  background-color: rgb(108, 174, 173);
+  height: 78vh;
+}
