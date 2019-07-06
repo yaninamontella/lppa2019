@@ -16,6 +16,9 @@
 body{
   background-color: rgb(230, 233, 231);
 }
+#board{
+    margin-left: 500px;
+}
 .list{
   justify:center;
   list-style: none;
@@ -45,4 +48,15 @@ body{
 
 .place-empty{
   visibility: hidden;
+}
+
+.ball-place:hover{
+    opacity:0.4;
+}
+.ball-place-empty:hover{
+  border: 6px
+}
+/****FOOTER*******/
+footer{
+margin-top: 100px;
 }
