@@ -9,19 +9,35 @@ const initialState=[
 ];
 
 //codigo html en js
-var dynamicBoard='<ul>'
+var dynamicBoard='<ul class="list">'
 
 for (var i=0;i < initialState.length; i++)
 {
   dynamicBoard+='<li>'
   for (var j=0;j < initialState[i].length; j++)
   {
-    dynamicBoard+='<button></button>';
+    if(initialState[i][j]===1)
+    {
+      dynamicBoard+='<button class="ball-place"></button>'
+    }
+    else
+    {
+      if(initialState[i][j]===0)
+      {
+        dynamicBoard+='<button class="ball-place-empty"></button>'
+      }
+      else
+      {
+        dynamicBoard+='<button class="place-empty"></button>'
+      }
+    }
   }
     dynamicBoard+='</li>';
 };
 
 dynamicBoard+='</ul>';
+console.log(dynamicBoard);
+
 window.onload=function()
 {
   //obtenemos el elemento dibujado en el HTML

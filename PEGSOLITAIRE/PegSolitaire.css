@@ -1,0 +1,48 @@
+/****HEADER*******/
+.header{
+  background-color: rgb(163,166, 164);
+  display: flex;
+  flex-direction: row;
+}
+.header img{
+  width:  140px;
+}
+.header-title{
+  font-size: 50px;
+  text-align: center;
+  margin-left: 200px;
+}
+/****BODY*******/
+body{
+  background-color: rgb(230, 233, 231);
+}
+.list{
+  justify:center;
+  list-style: none;
+}
+.ball-place, .ball-place-empty, .place-empty {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border: 2px;
+}
+
+
+.ball-place {
+  background-color: rgb(109, 250, 138);
+  border: 2px solid rgb(41,67,46);
+  box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.65);
+  border-radius: 20px;
+
+
+}
+
+.ball-place-empty{
+  background-color: rgb(250, 252, 251);
+  border: 2px solid rgb(112, 112, 112);
+  border-radius: 20px;
+}
+
+.place-empty{
+  visibility: hidden;
+}
