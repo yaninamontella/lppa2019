@@ -27,7 +27,6 @@ var generateCell= function (cell, rowN, colN){
         html+= 'hidden';
   }
     html+= '"></button>';
-    console.log(html)
     return html;
 };
 
@@ -44,7 +43,7 @@ var generateRow= function(row, rowN){
 
 
 var generateBoard=function(){
-  var html= '<div class="row">'
+  var html= '<div class="mainrow">'
   for (var i=0;i < board.length; i++)
   {
     html+=generateRow(board[i],i)
@@ -55,7 +54,6 @@ var generateBoard=function(){
 
 var unselectPeg=function(){
   if (selectedPeg.x!=undefined && selectedPeg.y!=undefined){
-    console.log(unselectPeg)
     var prevSelectId=createId(selectedPeg.x, selectedPeg.y)
     document.getElementById(prevSelectId).className='peg'
     var suggestion= document.getElementsByClassName('suggestion')
@@ -125,16 +123,26 @@ var selectPeg=function(evt){
 }
 
 var addPegsEventHandlers=function(pegs){
+
   for (var i=0;i < pegs.length; i++)
   {
     pegs[i].onclick=selectPeg
   }
 
 }
+
+var addResetEventHandlers=function(evt){
+
+
+}
+
 var init= function(){
   var boardElement=document.getElementById('board');
   boardElement.innerHTML=generateBoard()
   var pegs=boardElement.getElementsByClassName('peg')
   addPegsEventHandlers(pegs)
+  var reset=document.getElementsByClassName('reset')
+  reset.onclick= addResetEventHandlers
+
 };
 window.onload=init;
