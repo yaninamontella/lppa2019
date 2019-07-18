@@ -132,7 +132,10 @@ var addPegsEventHandlers=function(pegs){
 }
 
 var addResetEventHandlers=function(evt){
-
+  var opcion = confirm("¿Esta seguro que desea reiniciar el juego?");
+    if (opcion == true) {
+          init();
+    }
 
 }
 
@@ -141,7 +144,7 @@ var init= function(){
   boardElement.innerHTML=generateBoard()
   var pegs=boardElement.getElementsByClassName('peg')
   addPegsEventHandlers(pegs)
-  var reset=document.getElementsByClassName('reset')
+  var reset=document.getElementById('reset')
   reset.onclick= addResetEventHandlers
 
 };
